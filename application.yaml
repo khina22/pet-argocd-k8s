@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: pet-application
+  name: pet-khina-application
   namespace: argocd
 spec:
   project: default
 
   source:
-    repoURL: https://github.com/CloudSihmar/pet-argocd-k8s.git
+    repoURL: https://github.com/khina22/pet-argocd-k8s.git
     targetRevision: HEAD
     path: .
   destination: 
